@@ -1,0 +1,81 @@
+body {
+    font-size: 1.65rem;
+}
+
+.nav {
+    font-size: 1.7rem;
+}
+
+.cover-img {
+	height: 400px;
+	display: table;
+	width: 100%;
+	background-size: cover;
+}
+
+.cover-text {
+	display: table-cell;
+	vertical-align: middle;
+    text-align: center;
+}
+
+.title-header {
+    color: white;
+    font-size: 5.0rem;
+    text-shadow: 1px 1px 1px #808080;
+}
+
+.title-text {
+    color: white;
+    font-size: 3.0rem;
+    text-shadow: 1px 1px 1px #808080;
+}
+
+.ext {
+    font-size: 1.25rem;
+    text-decoration: line-through;
+}
+
+.session-papers {
+    padding: 16px 16px 16px 0;
+    background-color: rgba(240, 240, 240, 1);
+}
+.paper-title {
+    font-weight: bold;
+}
+
+.paper-authors {
+    list-style: none;
+
+}
+
+
+
+
+
+/* desktop size */
+@media only screen and (min-width: 1500px) {
+	.cover-img {
+		height: 400px;
+	}
+}
+
+/* tablet size */
+@media only screen and (min-width : 768px) and (max-width : 1200px) {
+	.cover-img {
+		height: 400px;
+    }
+}
+
+/* smartphone size */
+@media only screen and (max-width: 479px) {
+	.cover-img {
+		height: 300px;
+    }
+    .title-header {
+        font-size: 3.0rem;
+    }
+    .title-text {
+        font-size: 2.0rem;
+    }
+}
