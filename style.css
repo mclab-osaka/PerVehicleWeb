@@ -33,9 +33,9 @@
   font-size: small;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.2rem;
+h1, h2, h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 1.0rem;
 }
 
 .row {
