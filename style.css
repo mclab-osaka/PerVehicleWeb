@@ -33,7 +33,7 @@
   font-size: small;
 }
 
-h1, h2, h3 {
+h1, h2, h3,h4 {
   margin-top: 1.8rem;
   margin-bottom: 1.0rem;
 }
@@ -44,4 +44,9 @@ h1, h2, h3 {
 
 .active > a {
     border-bottom: solid 2px ;
+}
+
+.session {
+  background: rgba(0,0,0,0.3);
+  padding: 16px;
 }
