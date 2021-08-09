@@ -1,46 +1,114 @@
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>PerVehicle 2022 | International Workshop on Pervasive Computing for Vehicular Systems</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta description="4th International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2022)">
-    <meta charset="utf8">
+    <meta charset="utf-8">
+    <title>PerVehicle 2022 | International Workshop on Pervasive Computing for Vehicular Systems</title>
+    <meta description="The 4th International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2022)">
+    <meta name="twitter:title"
+        content="PerVehicle 2022 | International Workshop on Pervasive Computing for Vehicular Systems">
+    <meta name="twitter:description" content="The 4th International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2022) In conjunction with 2022 IEEE International Conference on Pervasive Computing and
+                    Communications (PerCom 2022)">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.pervehicle.org/2022/pisa.jpg">
+    <meta property="og:title"
+        content="PerVehicle 2022 | International Workshop on Pervasive Computing for Vehicular Systems">
+    <meta name="og:description" content="The 4th International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2022) In conjunction with 2022 IEEE International Conference on Pervasive Computing and
+                    Communications (PerCom)">
+    <meta property="og:url" content="https://www.pervehicle.org">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.pervehicle.org/2022/pisa.jpg">
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto|Inter' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Inter|Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-    <div>
+    <!-- Head -->
+    <header class="header" id="head">
+        <nav class="brand-navis-container">
+            <h1 id="brand"><a href="#">PerVehicle 2022</a></h1>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#cfp">CFP</a></li>
+                <li class="nav-list-item"><a href="#program">Program</a></li>
+                <li class="nav-list-item"><a href="#organizers">Organizers</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <header id="head">
-            <nav>
-                <h1 id="brand">PerVehicle 2022</h1>
-                <ul>
-                    <li><a href="#cfp">CFP</a></li>
-                    <li><a>Program</a></li>
-                    <li><a>Commitees</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class=" hero">
-            <div class="hero-container">
-                <div class="hero-texts">
-                    <h1>4th International Workshop on <br /> Pervasive Computing for Vehicular Systems</h1>
-                    <p>In conjunction with 2022 IEEE International Conference on Pervasive Computing and
-                        Communications
-                    </p>
-                </div>
+    <!-- Head -->
+    <div class=" hero">
+        <div class="image-text-container">
+            <div class="hero-image initial-v-fade">
+                <picture>
+                    <source type="image/webp" srcset="images/tower.png.webp" />
+                    <img src="images/tower.png" width="auto" height="100%" />
+                </picture>
+            </div>
+            <div class="hero-texts initial-fade">
+                <h1>4th International Workshop on <br /> Pervasive Computing for Vehicular Systems</h1>
+                <p>In conjunction with 2022 IEEE International Conference on Pervasive Computing and
+                    Communications
+                </p>
             </div>
         </div>
+    </div>
 
+    <!-- Main -->
+    <main>
+        <article>
+            <!-- Main/Overview -->
+            <section class="section-container columns">
+                <div class="overview">
+                    <div class="section-subheader">
+                        <h3>
+                            4th International Workshop on
+                            Pervasive Computing for Vehicular Systems (PerVehicle 2022)
+                        </h3>
+                    </div>
+                    <p>
+                        in conjunction with 2022 IEEE International Conference on
+                        Pervasive Computing and
+                        Communications (<a href="https://www.percom.org">PerCom 2022</a>).
+                    </p>
 
-        <main>
-            <section>
-                <h2 id="cfp">Call for papers</h2>
+                    <ul class="datetime-location-list">
+                        <li>
+                            <span class="material-icons">event_available</span>
+                            <span>March, 21 - 25, 2022</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">location_on</span>
+                            <span>Pisa, Italy</span>
+                        </li>
+                    </ul>
 
+                    <div class="section-subheader">
+                        <h3>Updates and news</h3>
+                    </div>
+
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="overview-image">
+                    <picture>
+                        <source type="image/webp" srcset="images/pisa.jpg.webp" />
+                        <img src="images/pisa.jpg" class="image-card"/>
+                    </picture>
+                </div>
+
+            </section>
+
+            <!-- Main/CFP -->
+            <section class="section-container" id="cfp">
+                <div class="section-header">
+                    <h2>Call for papers</h2>
+                </div>
                 <p>
                     4th International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2022)
                     aims to
@@ -48,6 +116,7 @@
                     challenges on
                     pervasive and mobile computing technologies for intelligent vehicular systems.
                 </p>
+
                 <p>
                     Vehicular systems have become more significant for our society. For example, connected
                     vehicles will
@@ -74,11 +143,10 @@
                     working
                     system and reporting real world deployment experiences are particularly of interest.
                 </p>
-
                 <div class="card">
-                    <h3>
-                        Topics of this workshop include, but are not limited to:
-                    </h3>
+                    <div class="section-subheader">
+                        <h3>Topics of this workshop include, but are not limited to:</h3>
+                    </div>
                     <ul>
                         <li>connected vehicles</li>
                         <li>vehicular ad-hoc networks</li>
@@ -97,68 +165,71 @@
                 </div>
             </section>
 
-            <section>
-                <h2>Paper submission</h2>
+            <!-- Main/Submissin -->
+            <section class="section-container" id="submission">
+                <div class="section-header">
+                    <h2>Paper submission</h2>
+                </div>
                 <p>
-                    Paper submission has to be done via EDAS. If you don't have an EDAS account, please,
-                    register first
-                    (it is free) via the following.
+                    TBD
                 </p>
-
                 <p>
                     Submitted papers must be original contributions that are unpublished and are not currently
-                    under
-                    consideration for publication by other venues. Submissions are limited to a maximum length
-                    of 6
-                    pages
-                    and must adhere to IEEE format (2 column, 10 pt font, see here).
+                    under consideration for publication by other venues.
+                    Submissions are limited to a maximum length of 6
+                    pages and must adhere to IEEE format
+                    (2 column, 10 pt font, see <a
+                        href="https://www.ieee.org/conferences/publishing/templates.html">here</a>).
                 </p>
-
-                <p>
-                    Papers can be submitted via the following EDAS submission portal for PerVehicle 2021.
-                </p>
-
-                <p>
-                    Each accepted workshop paper requires a full PerCom registration (no registration is
-                    available for
-                    workshops only). Workshop papers will be included and indexed in the IEEE digital libraries
-                    (Xplore).
-                </p>
-
             </section>
 
-            <section>
-                <h2>Important Dates</h2>
-
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Paper Submission Due</td>
-                            <td>TBD</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Notification</td>
-                            <td>TBD</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Workshop Date</td>
-                            <td>TBD</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-
-                </table>
-
+            <section class="section-container" id="program">
+                <div class="section-header">
+                    <h2>Program</h2>
+                </div>
+                <p>
+                    TBD
+                </p>
             </section>
 
-            <section>
-                <h2>Organizers</h2>
+            <!-- Main/Timelines -->
+            <section class="section-container" id="timeline">
+                <div class="section-header">
+                    <h2>Important dates</h2>
+                </div>
+                <div class="timeline-table">
+                    <ul>
+                        <li>
+                            <span class="timeline-name">Paper Submission Due</span>
+                            <span class="timeline-date">TBD</span>
+                        </li>
+                        <li>
+                            <span class="timeline-name">Notification Date</span>
+                            <span class="timeline-date">TBD</span>
+                        </li>
+                        <li>
+                            <span class="timeline-name">Camera-ready Due</span>
+                            <span class="timeline-date">TBD</span>
+                        </li>
+                        <li>
+                            <span class="timeline-name">Workshop Date</span>
+                            <span class="timeline-date">TBD</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-                <div class="cols">
-                    <div class="col">
-                        <h3>Program Chairs</h3>
+            <!-- Main/Organizers -->
+            <section class="section-container" id="organizers">
+                <div class="section-header">
+                    <h2>Organizers</h2>
+                </div>
+                <p>contact: pervehicle.organizers@gmail.com</p>
+                <div class="columns">
+                    <div class="two-column">
+                        <div class="section-subheader">
+                            <h3>Program Chairs</h3>
+                        </div>
                         <ul>
                             <li><span class="name">Susumu Ishihara </span><span class="aff">(Shizuoka University,
                                     Japan)</span></li>
@@ -169,7 +240,9 @@
                                 </span></li>
                         </ul>
 
-                        <h3>Publicity Chair</h3>
+                        <div class="section-subheader">
+                            <h3>Publicity Chair</h3>
+                        </div>
                         <ul>
                             <li><span class="name">Yanqiu Huang</span>
                                 <span class="aff">
@@ -178,7 +251,9 @@
                             </li>
                         </ul>
 
-                        <h3>Web Chair</h3>
+                        <div class="section-subheader">
+                            <h3>Web Chair</h3>
+                        </div>
                         <ul>
                             <li>
                                 <span class="name">
@@ -191,57 +266,65 @@
                         </ul>
                     </div>
 
-                    <div class="col">
-                        <h3>Technical Program Committee</h3>
+                    <div class="two-column">
+                        <div class="section-subheader">
+                            <h3>Technical Program Committee</h3>
+                        </div>
                         <ul>
                             <li>TBD</li>
                         </ul>
                     </div>
                 </div>
-
             </section>
 
-        </main>
+        </article>
+    </main>
 
-        <footer>
-            <section>
-                <h3>Previous PerVehicle</h3>
-                <ul>
-                    <li>
-                        <a href="/2021">PerVehicle 2021</a>
-                    </li>
-                    <li>
-                        <a href="/2020">PerVehicle 2020</a>
-                    </li>
-                    <li>
-                        <a href="/2019">PerVehicle 2019</a>
-                    </li>
-                </ul>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <section class="footer-section columns">
+                <div>
+                    <h3>Main Conference</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.percom.org/">PerCom 2022</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Previous PerVehicle</h3>
+                    <ul>
+                        <li>
+                            <a href="/2021">PerVehicle 2021</a>
+                        </li>
+                        <li>
+                            <a href="/2020">PerVehicle 2020</a>
+                        </li>
+                        <li>
+                            <a href="/2019">PerVehicle 2019</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            pervehicle.organizers [at] gmail.com
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section>
+            <section class="footer-section">
                 <p>
                     © 2022 International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2022)
                 </p>
-
             </section>
-        </footer>
+        </div>
+    </footer>
 
-        <script>
-            window.onscroll = () => {
-                const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                if (scrollTop > 0) {
-                    head.style.background = "rgba(255,255,255,0.9)";
-                    head.style['backdrop-filter'] = "blur(8px)";
-                    brand.style.visibility = "visible";
-                } else {
-                    head.style.background = null;
-                    brand.style.visibility = "hidden";
-                    head.style['backdrop-filter'] = null;
-                }
-            }
-        </script>
-    </div>
-
+    <script src="index.js"></script>
 </body>
 
 </html>
