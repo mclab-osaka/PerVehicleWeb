@@ -1,0 +1,198 @@
+:root {
+  --primary-color: #17a2b8;
+  --black-color: #343a40;
+  --grey-color: #adb5bd;
+  --primary-transparent-color: #17a3b848;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', 'sans-serif';
+    color: var(--black-color);
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s;
+}
+
+header nav {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav #brand {
+    visibility: hidden;
+}
+
+header nav ul {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 24px;
+    margin-left: 8px;
+    border-radius: 32px;
+    text-align: center;
+    transition: 0.1s;
+    color: black;
+    backdrop-filter: blur(8px);
+    background:rgba(255, 255, 255, 0.05);
+}
+
+header nav ul li a:hover {
+    color: black;
+    background: var(--primary-color);
+}
+header nav ul li a:visited {
+    color: black;
+}
+
+.hero {
+    background-image: url("./images/pisa3_wide.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-text-container {
+    width: 800px;
+    margin: auto;
+}
+.hero-texts {
+    width: 60%;
+}
+
+.hero-texts h1 {
+    color: black;
+}
+
+.hero-texts p {
+    margin-top: 16px;
+}
+
+main {
+    width: 100%;
+    margin-top: 64px;
+}
+
+.ray {
+    background: url(./images/main-ray.svg) no-repeat top left;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 512px;
+}
+
+
+main section {
+    margin: auto;
+    margin-bottom: 48px;
+    width: 800px;
+    line-height: 1.5rem;
+}
+
+main section h2 {
+    font-size: 2.5rem;
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+
+section .card {
+    margin: 32px 0;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+main section ul {
+    padding-left: 32px;
+    margin: 16px 0;
+}
+
+section p {
+    margin: 16px 0;
+}
+
+section .cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section .col {
+    width: 47%;
+
+}
+
+.aff {
+    font-size: 0.8rem;
+    color: var(--grey-color);
+    display: inline-block;
+    padding-left: 8px;
+}
+
+footer {
+    margin-top: 48px;
+    padding: 32px 0;
+    margin: auto;
+    width: 100%;
+    color: var(--grey-color);
+
+    background: rgb(127, 130, 134);
+
+}
+footer ul {
+    padding-left: 16px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:visited {
+    color: white;
+}
+footer a:hover {
+    color: var(--primary-color);
+}
+footer li {
+    margin: 4px 0;
+}
+footer section {
+    width: 800px;
+    margin: 32px auto;
+}
+footer h3 {
+    font-size: 1rem;
+    margin: 8px
+}
+
+footer p {
+    text-align: center;
+    font-size: small;
+}
