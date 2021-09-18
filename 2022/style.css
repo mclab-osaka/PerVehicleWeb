@@ -18,15 +18,6 @@
     padding: 0;
 }
 
-a, a:visited {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-a:hover {
-    color: var(--pprimary-color);
-    text-decoration: none;
-}
-
 html {
     font-size: 62.5%;
 }
@@ -37,6 +28,7 @@ body {
     color: var(--black-color);
 }
 
+
 h1,h2,h3,h4,h5,h6 {
   font-size: 100%;
 }
@@ -46,6 +38,38 @@ h1,h2,h3,h4,h5,h6 {
 ::selection {
     background-color: var(--primary-color);
 }
+
+p a {
+    color: var(--pprimary-color);
+    text-decoration: none;
+}
+p a:visited {
+    color: var(--pprimary-color);
+    text-decoration: none;
+}
+
+li a {
+    color: var(--pprimary-color);
+    text-decoration: none;
+}
+
+li a:visited {
+    color: var(--pprimary-color);
+    text-decoration: none;
+}
+/*
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+*/
 
 
 /* ----------------------------------- */
@@ -71,6 +95,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .header #brand a {
     color: var(--black-color);
+    text-decoration: none;
 }
 .header #brand a:hover {
     color: var(--primary-color);
@@ -432,7 +457,7 @@ footer h3 {
 /* Fade-in
 /* ----------------------------------- */
 .initial-v-fade {
-  transition: all 2s;
+  transition: all 1s;
   opacity: 0;
   visibility: hidden;
   transform: translate(0px, 40px) scale(1);
