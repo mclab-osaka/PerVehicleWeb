@@ -1,6 +1,6 @@
 :root {
-    --pprimary-color: rgb(200, 50, 40);
-    --primary-color: rgb(238, 90, 79);
+    --pprimary-color: #24649c;
+    --primary-color: #FFD966;
     --white-color: rgb(255, 255, 255);
     --transparent-grey-color: rgb(0, 0, 0, 0.05);
     --light-grey-color: rgb(206, 206, 206);
@@ -88,7 +88,7 @@ a:hover {
 }
 
 .header .brand-navis-container {
-    max-width: 840px;
+    max-width: 860px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -126,7 +126,7 @@ a:visited {
     margin-left: 8px;
     border-radius: 32px;
     transition: 0.1s;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.35);
 }
 .header .nav-list-item:last-child {
     margin-right: 8px;
@@ -171,7 +171,7 @@ a:visited {
 .hero {
     width: 100%;
     height: var(--height-hero);
-    background-image: url("./images/background_slice.jpg");
+    background-image: url("./images/background_slice_2023c.jpg");
     overflow: hidden;
     direction: rtl;
 }
@@ -195,10 +195,15 @@ a:visited {
     font-size: 1.5rem;
     direction: ltr;
 }
+
 .hero .hero-texts h1 {
     font-size: 3rem;
     color: var(--true-black-color);
     margin-bottom: 16px;
+}
+
+.hero .hero-texts p {
+    font-size: 1.6rem;
 }
 @media only screen and (max-width: 900px) {
     .hero {
@@ -372,6 +377,7 @@ article a:hover {
     height: 100%;
     max-height: 300px;
     border-radius: 12px;
+    background: var(--primary-color); 
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
     object-fit: cover;
 }
