@@ -577,3 +577,29 @@ footer h3 {
 .session h3 {
     margin-bottom: 4px;
 }
+
+.keynote-speaker {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    word-break: normal;
+}
+
+.keynote-speaker picture img {
+    width: 250px;
+    height: 250px;
+    margin-right: 16px;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 768px) { /* 768px以下の画面幅で適用されます */
+    .keynote-speaker {
+        flex-direction: column;
+        align-items: center; /* オプション：アイテムを中央に揃えたい場合 */
+    }
+
+    .keynote-speaker picture img {
+        margin-right: 0; /* 縦方向の配置のため、右の余白を削除 */
+        margin-bottom: 16px; /* 下に余白を設定 */
+    }
+}
