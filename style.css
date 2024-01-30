@@ -583,11 +583,12 @@ footer h3 {
     flex-direction: row;
     align-items: flex-start;
     word-break: normal;
+    margin-bottom: 20px;
 }
 
 .keynote-speaker picture img {
-    width: 250px;
-    height: 250px;
+    width: 330px;
+    height: 330px;
     margin-right: 16px;
     margin-top: 6px;
 }
