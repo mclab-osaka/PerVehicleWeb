@@ -1,1 +1,322 @@
-Raise a follow-up; the file's BlobSHA is unavailable.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PerVehicle 2026 | International Workshop on Pervasive Computing for Vehicular Systems</title>
+    <meta description="The 8th International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2026)">
+    <meta name="twitter:title" content="PerVehicle 2026 | International Workshop on Pervasive Computing for Vehicular Systems">
+    <meta name="twitter:description" content="The 8th International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2026) In conjunction with 2026 IEEE International Conference on Pervasive Computing and
+                    Communications (PerCom 2026)">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.pervehicle.org/images/connected_vehicles.jpg">
+    <meta property="og:title" content="PerVehicle 2026 | International Workshop on Pervasive Computing for Vehicular Systems">
+    <meta name="og:description" content="The 8th International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2026) In conjunction with 2026 IEEE International Conference on Pervasive Computing and
+                    Communications (PerCom)">
+    <meta property="og:url" content="https://www.pervehicle.org">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.pervehicle.org/images/connected_vehicles.jpg">
+
+    <link href="https://fonts.googleapis.com/icon?family=Inter|Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="google-site-verification" content="dkOqMX1cO9TGhQIK-NjmuX0GWZ43S04wfguQxKQflVA" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <header class="relative">
+        <nav class="bg-white shadow fixed w-full z-50">
+            <div class="container mx-auto lg:px-32 py-4 flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold" style="color: #2355a3;">PerVehicle 2026</a>
+                <div class="hidden md:flex space-x-4 md:mr-2">
+                    <a href="#cfp" class="font-semibold hover:text-gray-700" style="color: #2355a3;">CFP</a>
+                    <span class="text-gray-400 cursor-not-allowed">Keynote</span>
+                    <a href="program.html" class="font-semibold hover:text-gray-700" style="color: #2355a3;">Program</a>
+                    <a href="#organizers" class="font-semibold hover:text-gray-700" style="color: #2355a3;">Committee</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <span class="material-icons">menu</span>
+                    </button>
+                </div>
+            </div>
+            <div id="menu" class="hidden md:hidden flex flex-col space-y-2 mt-2 mb-8">
+                <a href="#cfp" class="block font-semibold hover:text-gray-700 px-4" style="color: #2355a3;">CFP</a>
+                <span class="block text-gray-400 cursor-not-allowed px-4">Keynote</span>
+                <a href="program.html" class="block font-semibold hover:text-gray-700 px-4" style="color: #2355a3;">Program</a>
+                <a href="#organizers" class="block font-semibold hover:text-gray-700 px-4" style="color: #2355a3;">Committee</a>
+            </div>
+        </nav>
+
+        <script>
+            document.getElementById('menu-button').addEventListener('click', function () {
+                var menu = document.getElementById('menu');
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                } else {
+                    menu.classList.add('hidden');
+                }
+            });
+        </script>
+
+        <div class="pt-16 h-96 overflow-hidden" style="background-image: url('./images/pervehicle_background.webp'); background-size: cover; background-position: center 60%;">
+            <div class="container mx-auto px-4 lg:px-32 h-full relative">
+                <div class="h-full flex items-center relative z-20">
+                    <div class="w-full lg:w-2/3 text-left">
+                        <h1 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #2355a3;">
+                            8th International Workshop on<br>Pervasive Computing for <span style="text-decoration: underline; text-decoration-color: #f9b233; text-decoration-thickness: 4px; text-underline-offset: 2px;">Vehicular Systems</span>
+                        </h1>
+                        <p class="text-lg text-gray-600">
+                            In conjunction with 2026 IEEE International Conference on Pervasive Computing and Communications
+                        </p>
+                    </div>
+                </div>
+                <img src="./images/tower.png" alt="Leaning Tower of Pisa" 
+                     class="absolute bottom-0 right-4 lg:right-32 h-80 w-auto opacity-50 lg:opacity-100 z-10"
+                     style="filter: drop-shadow(10px 4px 0px #f9b233);">
+            </div>
+        </div>
+    </header>
+
+    <main class="py-8 px-4">
+
+        <div class="container mx-auto lg:px-32">
+
+            <div class="flex flex-col md:flex-row items-start mb-8 mt-8">
+                <section class="md:w-2/3 md:mr-16">
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-bold mb-4">About</h2>
+                        <p class="text-lg">The 8th International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2026)
+                            aims to provide researchers and practitioners a forum for presenting and discussing research
+                            challenges on pervasive and mobile computing technologies for intelligent vehicular systems.
+                            This workshop will be held in conjunction with 2026 IEEE International Conference on Pervasive Computing and Communications 
+                            (<a class="underline hover:text-gray-700 font-semibold" style="color: #2355a3;" href="https://www.percom.org/">PerCom 2026</a>).
+                        </p>
+                    </div>
+                    <div class="flex flex-row space-x-4 mb-8">
+                        <div class="flex items-center space-x-2">
+                            <span class="material-icons">event_available</span>
+                            <span class="text-lg">One day during March 16-20, 2026 (TBD)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="material-icons">location_on</span>
+                            <span class="text-lg">Pisa, Italy</span>
+                        </div>
+                    </div>
+                    
+                    <!--
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Updates and News</h2>
+                        <ul class="list-disc list-inside">
+                            <li class="mb-2">TBD: Web page opened</li>
+                        </ul>
+                    </div>
+                -->
+                </section>
+
+                <div class="md:w-1/3 relative">
+                    <picture>
+                        <source srcset="./images/connected_vehicles.jpg.webp" type="image/webp">
+                        <source srcset="./images/connected_vehicles.jpg" type="image/jpeg">
+                        <img src="./images/connected_vehicles.jpg" alt="Connected Vehicles" class="h-full w-full object-cover" style="filter: drop-shadow(12px 12px 0px #f9b233);">
+                    </picture>
+                    <div class="absolute inset-0" style="background-color: rgba(35, 85, 163, 0.15);"></div>
+                </div>
+            </div>
+
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold mb-4">Important Dates</h2>
+                <div class="bg-white px-4 py-2 border border-gray-200">
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-2 whitespace-nowrap text-lg font-bold text-gray-900">
+                                        Paper submission deadline</td>
+                                    <td class="py-2 whitespace-nowrap text-lg font-bold" style="color: #2355a3;">
+                                        December 1, 2025 AoE (Extended) <span class="line-through">November 17, 2025</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 whitespace-nowrap text-lg font-bold text-gray-900">Paper
+                                        notification</td>
+                                    <td class="py-2 whitespace-nowrap text-lg font-bold" style="color: #2355a3;">
+                                        January 5, 2026
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 whitespace-nowrap text-lg font-bold text-gray-900">Camera-ready
+                                        deadline</td>
+                                    <td class="py-2 whitespace-nowrap text-lg font-bold" style="color: #2355a3;">
+                                        February 2, 2026
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 whitespace-nowrap text-lg font-bold text-gray-900">Workshop
+                                        date</td>
+                                    <td class="py-2 whitespace-nowrap text-lg font-bold" style="color: #2355a3;">
+                                        One day during March 16-20, 2026 (TBD)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12" id="cfp">
+                <h2 class="text-3xl font-bold mb-4">Call for Papers</h2>
+                <p class="text-lg">
+                    8th International Workshop on Pervasive Computing for Vehicular Systems (PerVehicle 2026) aims to
+                    provide researchers and practitioners a forum for presenting and discussing research challenges on
+                    pervasive and mobile computing technologies for intelligent vehicular systems.
+
+                    Vehicular systems have become more significant for our society. For example, connected vehicles will
+                    provide new network architectures and middleware to enable new pervasive applications like
+                    intelligent platooning, cooperative optimization of traffic flows, automated vehicles and
+                    intelligent vehicle-pedestrian safety systems. In addition, drones and UAVs will bring new concepts
+                    and ideas for smart mobility and society. Pervasive computing technologies including wireless
+                    networking, mobile and distributed computing, sensor systems, ambient intelligence, and smart
+                    devices, will play more important roles in designing, managing and realizing intelligent, smart
+                    vehicular systems. The main focus of this workshop is on such pervasive and mobile computing for/by
+                    vehicular systems.
+
+                    We solicit technical papers describing original, previously unpublished research, not currently
+                    under review by another conference or journal. Submissions should clearly identify how they relate
+                    to issues on pervasive computing and vehicular systems. Contributions describing an overall working
+                    system and reporting real world deployment experiences are particularly of interest.
+                </p>
+
+
+                <div class="w-full p-6 border border-gray-200 mt-8 bg-white">
+                    <h3 class="text-xl font-bold mb-4">Topics of this workshop include, but are not limited to:</h3>
+                    <ul class="list-disc list-inside">
+                        <li>connected vehicles</li>
+                        <li>vehicular ad-hoc networks</li>
+                        <li>Intelligent Transport Systems (ITS)</li>
+                        <li>mobile and pervasive computing for/by vehicles</li>
+                        <li>human-machine interface for vehicular systems</li>
+                        <li>V2X communications (vehicles, roadside units, infrastructure, drones, pedestrians)</li>
+                        <li>mobile edge computing</li>
+                        <li>autonomous/automated vehicles</li>
+                        <li>drone and UAV</li>
+                        <li>middleware for vehicular systems</li>
+                        <li>new applications for vehicular systems</li>
+                        <li>security for vehicular systems</li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold mb-4">Paper Submission</h2>
+                <p class="text-lg">
+                    Papers must be in PDF format and must be submitted via EDAS.
+                    The submission link for PerVehicle 2026 is here:
+                        <a class="underline hover:text-gray-700 font-semibold" style="color: #2355a3;" href="https://edas.info/newPaper.php?c=34027" target="_blank" rel="noopener noreferrer">
+                         https://edas.info/newPaper.php?c=34027
+                        </a>
+                </p>
+                <br/>
+                <p class="text-lg">
+                    Submitted papers should be 6 pages with the option to include 1 additional page for a maximum of 7 pages total, and formatted following the IEEE Computer Society author guidelines. 
+                    The IEEE LaTeX and Microsoft Word templates, as well as formatting instructions, can be found here: 
+                    <a class="underline hover:text-gray-700 font-semibold" style="color: #2355a3;" href="https://www.ieee.org/conferences/publishing/templates.html">https://www.ieee.org/conferences/publishing/templates.html</a>
+                </p>
+                <br/>
+                <p class="text-lg">
+                    All submissions will undergo a double-blind review process. As a result, authors must make a good faith effort to anonymize their submissions. Submitted papers must be original contributions that are unpublished and are not currently under consideration for publication by other venues. In particular, publishing pre-prints of your submitted papers in online archives (e.g., arXiv) prior to submission does NOT disqualify the paper from consideration. Moreover, we instruct reviewers NOT to go searching for pre-prints of submitted papers. However, papers that are judged not to have created a suitable double-blind version may be summarily rejected from further consideration.
+                </p>
+                <br/>
+                <p class="text-lg">
+                    The accepted papers must be presented in person by one of the authors, with no remote participation allowed. Each accepted workshop paper requires a full PerCom registration (no registration is available for workshops only). Workshop papers will be included and indexed in the IEEE digital libraries (Xplore).
+                </p>
+
+            </section>
+
+
+            <section class="mb-8">
+                <h2 id="organizers" class="text-3xl font-bold mb-4">Organizing Committee</h2>
+                <p class="mb-8 text-lg">contact: pervehicle-oc [at] mc.net.ist.osaka-u.ac.jp</p>
+                <div class="flex flex-col md:flex-row w-full justify-center py-4">
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-bold mb-2">General Co-Chairs</h3>
+                        <ul class="text-lg list-disc list-inside">
+                            <li>Yanqiu Huang (University of Twente, Netherlands)</li>
+                            <li>Susumu Ishihara (Shizuoka University, Japan)</li>
+                        </ul>
+
+                        <h3 class="text-xl font-bold mb-2 mt-8">TPC Co-Chairs</h3>
+                        <ul class="text-lg list-disc list-inside">
+                            <li>Hiroshi Shigeno (Keio University, Japan)</li>
+                            <li>Hirozumi Yamaguchi (The University of Osaka, Japan)</li>
+                        </ul>
+
+                        <h3 class="text-xl font-bold mb-2 mt-8">Web Chair</h3>
+                        <ul class="text-lg list-disc list-inside">
+                            <li>Tatsuya Amano (The University of Osaka, Japan)</li>
+                        </ul>
+                    </div>
+
+                    <div class="md:w-1/2 mt-8 md:mt-0">
+                        <h3 class="text-xl font-bold mb-2">Technical Program Committee</h3>
+                        <ul class="text-lg list-disc list-inside">
+                            <li>Tatsuya Amano (The University of Osaka, Japan)</li>
+                            <li>Luca Davoli (University of Parma, Italy)</li>
+                            <li>Konrad Fuger (Hamburg University of Technology, Germany)</li>
+                            <li>Shigemi Ishida (Future University Hakodate, Japan)</li>
+                            <li>Yuka Kato (Tokyo Woman's Christian University, Japan)</li>
+                            <li>Ryozo Kiyohara (Kanagawa Institute of Technology, Japan)</li>
+                            <li>Susana Sargento (Universidade de Aveiro, Portugal)</li>
+                            <li>Evgenii Vinogradov (Universitat Politècnica de Catalunya, Spain)</li>
+                            <li>Keiichi Yasumoto (Nara Institute of Science and Technology, Japan)</li>
+                            <li>Takahito Yoshizawa (KU Leuven, Belgium)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+    </main>
+
+    <footer class="py-16 text-white" style="background-color: #2355a3;">
+        <div class="container mx-auto mb-16 px-4 lg:px-32">
+            <div class="flex flex-col md:flex-row items-start">
+                <div class="md:w-1/3">
+                    <h3 class="text-xl font-bold mb-2">Main Conference</h3>
+                    <a href="https://www.percom.org" class="text-white hover:text-yellow-300" style="--tw-text-opacity: 1;" onmouseover="this.style.color='#f9b233'" onmouseout="this.style.color='white'">PerCom 2026</a>
+                </div>
+
+                <div class="md:w-1/3">
+                    <h3 class="text-xl font-bold mb-2">Previous PerVehicle Workshops</h3>
+                    <ul>
+                        <li><a href="https://www.pervehicle.org/2025/" class="text-white" onmouseover="this.style.color='#f9b233'" onmouseout="this.style.color='white'">PerVehicle 2025 (Washington, D.C., USA)</a></li>
+                        <li><a href="https://www.pervehicle.org/2024/" class="text-white" onmouseover="this.style.color='#f9b233'" onmouseout="this.style.color='white'">PerVehicle 2024 (Biarritz, France)</a></li>
+                        <li><a href="https://www.pervehicle.org/2023/" class="text-white" onmouseover="this.style.color='#f9b233'" onmouseout="this.style.color='white'">PerVehicle 2023 (Atlanta, USA)</a></li>
+                        <li><a href="https://www.pervehicle.org/2022/" class="text-white" onmouseover="this.style.color='#f9b233'" onmouseout="this.style.color='white'">PerVehicle 2022 (Pisa, Italy - Virtual)</a></li>
+                        <li><a href="https://www.pervehicle.org/2021/" class="text-white" onmouseover="this.style.color='#f9b233'" onmouseout="this.style.color='white'">PerVehicle 2021 (Kassel, Germany - Virtual)</a></li>
+                        <li><a href="https://www.pervehicle.org/2020/" class="text-white" onmouseover="this.style.color='#f9b233'" onmouseout="this.style.color='white'">PerVehicle 2020 (Austin, USA - Virtual)</a></li>
+                        <li><a href="https://www.pervehicle.org/2019/" class="text-white" onmouseover="this.style.color='#f9b233'" onmouseout="this.style.color='white'">PerVehicle 2019 (Kyoto, Japan)</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:w-1/3">
+                    <h3 class="text-xl font-bold mb-2">Contact</h3>
+                    <p>
+                        pervehicle-oc [at] mc.net.ist.osaka-u.ac.jp
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">&copy; 2026 PerVehicle Workshop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
