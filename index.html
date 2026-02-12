@@ -38,28 +38,59 @@
                     <a href="#organizers" class="font-semibold hover:text-gray-700" style="color: #2355a3;">Committee</a>
                 </div>
                 <div class="md:hidden">
-                    <button id="menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
-                        <span class="material-icons">menu</span>
+                    <button id="menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none p-2 -mr-2" aria-label="メニュー" aria-expanded="false">
+                        <span class="material-icons text-3xl">menu</span>
                     </button>
                 </div>
             </div>
-            <div id="menu" class="hidden md:hidden flex flex-col space-y-2 mt-2 mb-8">
-                <a href="#cfp" class="block font-semibold hover:text-gray-700 px-4" style="color: #2355a3;">CFP</a>
-                <a href="keynote.html" class="block font-semibold hover:text-gray-700 px-4" style="color: #2355a3;">Keynote</a>
-                <a href="program.html" class="block font-semibold hover:text-gray-700 px-4" style="color: #2355a3;">Program</a>
-                <a href="#organizers" class="block font-semibold hover:text-gray-700 px-4" style="color: #2355a3;">Committee</a>
+            <!-- モバイルメニュー -->
+            <div id="menu" class="hidden md:hidden flex flex-col bg-white border-t border-gray-100 py-2">
+                <a href="#cfp" class="menu-link block font-semibold hover:bg-gray-50 px-6 py-4 text-lg" style="color: #2355a3;">CFP</a>
+                <a href="keynote.html" class="menu-link block font-semibold hover:bg-gray-50 px-6 py-4 text-lg" style="color: #2355a3;">Keynote</a>
+                <a href="program.html" class="menu-link block font-semibold hover:bg-gray-50 px-6 py-4 text-lg" style="color: #2355a3;">Program</a>
+                <a href="#organizers" class="menu-link block font-semibold hover:bg-gray-50 px-6 py-4 text-lg" style="color: #2355a3;">Committee</a>
             </div>
+            <!-- オーバーレイ -->
+            <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-25 hidden md:hidden" style="top: 60px; z-index: -1;"></div>
         </nav>
 
         <script>
-            document.getElementById('menu-button').addEventListener('click', function () {
+            (function() {
+                var menuButton = document.getElementById('menu-button');
                 var menu = document.getElementById('menu');
-                if (menu.classList.contains('hidden')) {
+                var overlay = document.getElementById('menu-overlay');
+                var menuLinks = document.querySelectorAll('.menu-link');
+
+                function openMenu() {
                     menu.classList.remove('hidden');
-                } else {
-                    menu.classList.add('hidden');
+                    overlay.classList.remove('hidden');
+                    menuButton.setAttribute('aria-expanded', 'true');
+                    menuButton.querySelector('.material-icons').textContent = 'close';
                 }
-            });
+
+                function closeMenu() {
+                    menu.classList.add('hidden');
+                    overlay.classList.add('hidden');
+                    menuButton.setAttribute('aria-expanded', 'false');
+                    menuButton.querySelector('.material-icons').textContent = 'menu';
+                }
+
+                menuButton.addEventListener('click', function () {
+                    if (menu.classList.contains('hidden')) {
+                        openMenu();
+                    } else {
+                        closeMenu();
+                    }
+                });
+
+                // オーバーレイクリックで閉じる
+                overlay.addEventListener('click', closeMenu);
+
+                // メニューリンククリックで閉じる
+                menuLinks.forEach(function(link) {
+                    link.addEventListener('click', closeMenu);
+                });
+            })();
         </script>
 
         <div class="pt-16 h-96 overflow-hidden" style="background-image: url('./images/pervehicle_background.webp'); background-size: cover; background-position: center 60%;">
